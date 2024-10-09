@@ -21,5 +21,4 @@ function K = AssemblyK(COOR,CN, rho_val)
         % Add the local stiffness matrix components to the global stiffness matrix
         K(A, B) = K(A, B) + Ke;
     end
-
 end
