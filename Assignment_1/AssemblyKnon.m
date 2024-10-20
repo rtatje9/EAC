@@ -28,5 +28,4 @@ function K = AssemblyKnon(COOR,CN,d_k,AreaFUN,DerStressFUN);
         % Add the local stiffness matrix components to the global stiffness matrix
         K(A, B) = K(A, B) + Ke;
     end
-
 end
