@@ -17,21 +17,20 @@ function [Residual,STRAIN,STRESS] = AssemblyFint(COOR,CN,d_k,stressFUN,AreaFUN)
     for e=1:n_elem
         NODES_e = CN(e,:); % Obtain initial and final nodes of the element e
         COOR_e = COOR(NODES_e); % Corresponding coordinates to the element e
-        x1=COOR_e(1); % Node 1
-        x2=COOR_e(2); % Node 2
+        x1=COOR_e(1); % Real position node 1
+        x2=COOR_e(2); % Real position node 2
         he = x2-x1; % Element longitude
-        d_k_elem = d_k(NODES_e,1); % Previous elements solution
+        d_k_elem = d_k(NODES_e,1); % Previous displacement node solution of the element
         Be = 1/he*[-1, 1]; % Matrix 
         A_e = AreaFUN((x2+x1)/2); % Area of the element (Average of nodes)
         Strain_e = Be*d_k_elem; % Strain of the element
         Stress_e = stressFUN(Strain_e); % Stress of the element
         F_e = he*(Be'*A_e*Stress_e); % Elemental internal force
         
+        Residual(NODES_e) = Residual(NODES_e) + F_e; % No external forces. Contribution of each element
 
-        Residual(NODES_e) = Residual(NODES_e) + F_e;
-
-        STRAIN(e) = Strain_e;
-        STRESS(e) = Stress_e;
+        STRAIN(e) = Strain_e; % Strain of the element
+        STRESS(e) = Stress_e; % Stress of the element
     end
 
 end
