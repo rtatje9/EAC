@@ -1,0 +1,18 @@
+# GraphSet: graphset-1
+#
+# X: "3D distance" Y: "Temperature"
+#
+# Coordinates type: Cartesian
+#
+# Units: {} {} 
+#
+# Graph: "Line Graph in DATA_ASSIGNMENT_2_MESH_5x5 ( 2). Step 1"
+#
+0 0
+0.40000001 -0.92959797
+0.80000001 -1.141946
+1.2 -1.186126
+1.6 -1.172345
+2 -1.1385241
+# End
+
