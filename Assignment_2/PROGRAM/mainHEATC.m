@@ -11,7 +11,7 @@ end
 %%% INPUT  %%% 
 % Input data file %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-NAME_INPUT_DATA = ['MESH_1_ASSIGN'] ;
+NAME_INPUT_DATA = ['MESH_30_ASSIGN'] ;
 %------------------------------------------------------
 
 % PREPROCESS  
