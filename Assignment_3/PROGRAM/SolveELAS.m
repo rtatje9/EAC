@@ -22,15 +22,21 @@ DOFl = 1:nnode*ndim ;
 DOFl(DOFr) = [] ;
 
 
-error('You should implement the solution of the system of equations, as well as the computation of nodal reaction forces')
+%error('You should implement the solution of the system of equations, as well as the computation of nodal reaction forces')
 % To be completed .... 
 % dL =  K^{-1}*(Fl .Klr*dR)    
 % *** 
+
+
 d = zeros(nnode*ndim,1) ; % Nodal displacements (initialization)
 React = zeros(size(d)) ;  %  REaction forces  (initialization)
-  
+
+
+d(DOFl, 1) = K(DOFl, DOFl) \(F(DOFl, 1) - K(DOFl, DOFr) * dR);
+React(DOFr) = K(DOFr, DOFr) * d(DOFr, 1) + K(DOFr, DOFl) * d(DOFl, 1) - F(DOFr, 1);
 
 %%%% COmputation of strain and stress vector at each gauss point
 disp('Computation of stress and strains at each Gauss point')
 [strainGLO stressGLO posgp]= StressStrains(COOR,CN,TypeElement,celasglo,d,typePROBLEM,celasgloINV,DATA) ;
+end
 

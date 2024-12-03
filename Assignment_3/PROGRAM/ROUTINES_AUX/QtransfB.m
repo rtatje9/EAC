@@ -17,7 +17,21 @@ if ndim==2
 elseif ndim ==3 
    
    
-   error('This part of the function is missing...Implement it')
+   %error('This part of the function is missing...Implement it')
+    nstrain = 6;
+    Be = zeros(nstrain, nnodeE * ndim);
+    colX = 1:3:(nnodeE * 3 - 2);
+    colY = 2:3:(nnodeE * 3 - 1);
+    colZ = 3:3:(nnodeE * 3);
+    Be(1, colX) = BeTILDE(1, :); 
+    Be(2, colY) = BeTILDE(2, :); 
+    Be(3, colZ) = BeTILDE(3, :); 
+    Be(4, colY) = BeTILDE(3, :); 
+    Be(4, colZ) = BeTILDE(2, :); 
+    Be(5, colX) = BeTILDE(3, :); 
+    Be(5, colZ) = BeTILDE(1, :); 
+    Be(6, colX) = BeTILDE(2, :); 
+    Be(6, colY) = BeTILDE(1, :);
    
 else
    error('Incorrect option')

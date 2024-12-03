@@ -14,15 +14,23 @@ TypeIntegrand = 'K';
 % Assembly of matrix K
 % ----------------
 K = sparse([],[],[],nnode*ndim,nnode*ndim,nnodeE*ndim*nelem) ;
+%K = zeros(nnode*ndim) ;
 for e = 1:nelem
     celas = celasglo(:,:,e) ;  % Stiffness matrix of element "e"
     CNloc = CN(e,:) ;   % Coordinates of the nodes of element "e"
     Xe = COOR(CNloc,:)' ;     % Computation of elemental stiffness matrix
     Ke = ComputeKeMatrix(celas,weig,dershapef,Xe) ;
    
-       error('You should program the assembly of the stiffness matrix !!!! ')
+       %error('You should program the assembly of the stiffness matrix !!!! ')
        % ------------------------------------------------------------------------
-  
+    % Assembly process
+    indices = zeros(nnodeE * 3, 1);
+    for node = 1:nnodeE
+        indices((node-1)*3+1,1) = (CN(e,node)-1)*3+1;
+        indices((node-1)*3+2,1) = (CN(e,node)-1)*3+2;
+        indices((node-1)*3+3,1) = (CN(e,node)-1)*3+3;
+    end
+    K(indices, indices) = K(indices, indices) + Ke;
     
     if mod(e,10)==0  % To display on the screen the number of element being assembled
         disp(['e=',num2str(e)])

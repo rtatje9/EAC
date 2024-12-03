@@ -1,0 +1,33 @@
+BeginZE C:/Users/roger/Documents/Enginyeria aeroespacial/7Q/Enginyeria Aeroespacial Computacional/EAC/Assignment_3/PROGRAM/Test_Extrusion.gid/Test_Extrusion.vv
+   x -2.27391433715820313 2.84864544868469238
+   y 1.65302515029907227 -0.630608856678009033
+   z -3.31662464141845703 3.31662464141845703
+   e 1.10554158687591553
+   v 0.0234904517302820144 0.145654888294770218 0.0747410115064669339
+   r -0.986228489444680001
+   m 0.946396887302398682 0.154266431927680969 -0.283786594867706299 0 -0.140580430626869202 0.987723946571350098 0.0681066960096359253 0 0.290809392929077148 -0.0245611183345317841 0.956465721130371094 0 0 0 0 1
+   c 0 0 0
+   pd 0
+   pno 0
+   pfo 0
+   pf 4
+   pv 0
+   NowUse 0
+   DrawingType 0
+   LightVector 90 90 150 0
+   OGLShadow(UseShadows) 0
+   OGLShadow(RenderMode) RenderNice
+   OGLShadow(ShadowBias) -0.002
+   OGLShadow(AmbientShadows) 1
+   OGLShadow(UseFBO) 1
+   OGLShadow(FBOSize) 2048
+   OGLShadow(DimmedLightFactor) 0.02
+   OGLStereo(UseStereo) 0
+   OGLStereo(RelativeEyeDistance) 1
+   OGLStereo(FlipEyes) 0
+   OGLStereo(StereoMode) AnaglyphColors
+   OGLStereo(EyeDistance) 0.075
+   OGLStereo(LeftEyeDistance) 1 0 0 1
+   OGLStereo(RightEyeDistance) 0 1 1 1
+EndZE C:/Users/roger/Documents/Enginyeria aeroespacial/7Q/Enginyeria Aeroespacial Computacional/EAC/Assignment_3/PROGRAM/Test_Extrusion.gid/Test_Extrusion.vv
+
