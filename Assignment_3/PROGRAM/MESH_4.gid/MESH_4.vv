@@ -1,0 +1,37 @@
+BeginZE C:/Users/roger/Documents/Enginyeria aeroespacial/7Q/Enginyeria Aeroespacial Computacional/EAC/Assignment_3/PROGRAM/MESH_4.gid/MESH_4.vv
+   x -1.40329492092132568 3.91131019592285156
+   y 1.74301302433013916 -0.628229796886444092
+   z -3.19162464141845703 3.44162464141845703
+   e 1.10554158687591553
+   v 0.566823559799255472 0.020404708251990103 0.210196928717234999
+   r 0.79631146632354588
+   m 0.91080176830291748 -0.311632722616195679 0.270786136388778687 0 0.357896178960800171 0.269056618213653564 -0.89415818452835083 0 0.205792143940925598 0.911314189434051514 0.356589406728744507 0 0 0 0 1
+   c 1 0.125 -0.125
+   pd 0
+   pno 0
+   pfo 0
+   pf 4
+   pv 0
+   NowUse 1
+   DrawingType 1
+   LightVector 90 90 150 0
+   OGLShadow(UseShadows) 0
+   OGLShadow(RenderMode) RenderNice
+   OGLShadow(ShadowBias) -0.002
+   OGLShadow(AmbientShadows) 1
+   OGLShadow(UseFBO) 0
+   OGLShadow(FBOSize) 2048
+   OGLShadow(DimmedLightFactor) 0.02
+   OGLStereo(UseStereo) 0
+   OGLStereo(RelativeEyeDistance) 1
+   OGLStereo(FlipEyes) 0
+   OGLStereo(StereoMode) AnaglyphColors
+   OGLStereo(EyeDistance) 0.075
+   OGLStereo(LeftEyeDistance) 1 0 0 1
+   OGLStereo(RightEyeDistance) 0 1 1 1
+EndZE C:/Users/roger/Documents/Enginyeria aeroespacial/7Q/Enginyeria Aeroespacial Computacional/EAC/Assignment_3/PROGRAM/MESH_4.gid/MESH_4.vv
+
+BeginMirror
+   Mirror 0 Angle 0.0 AngleFake -15.0 SizeFactor 2.0 HeightOffset 0.25 Color #d9e5f24d Backlight Off EdgeStyle No Type Scene DrawMode Mirror
+EndMirror
+

@@ -13,7 +13,7 @@ end
 %%% INPUT  %%% 
 % Input data file %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-NAME_INPUT_DATA = 'BEAM3D' ;  % Name of the mesh file 
+NAME_INPUT_DATA = 'BEAM3D_ASSIGN_MESH_3' ;  % Name of the mesh file 
 %------------------------------------------------------
 
 % PREPROCESS  
