@@ -15,7 +15,7 @@ Mz = 0;
 Fr = [React(1:3:end).'; React(2:3:end).'; React(3:3:end).'].';    
 
 % Reference point for moment calculation
-ref_point = [0 .25/2 .25/2]; 
+ref_point = [0 .25/2 -0.25/2]; 
 
 % Calculate resultant reactions and moments
 for i = 1:size(Fr, 1)
