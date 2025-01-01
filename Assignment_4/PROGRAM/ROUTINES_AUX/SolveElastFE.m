@@ -1,6 +1,6 @@
 function[d strainGLO stressGLO  React posgp]  = SolveElastFE(COOR,CN,TypeElement,TypeElementB, densglo, celasglo, DOFr,dR,...  
-    Tnod,CNb,fNOD,Fpnt,typePROBLEM,celasgloINV,DATA) ;    
-
+    Tnod,CNb,fNOD,Fpnt,typePROBLEM,celasgloINV,DATA)  ; 
+   
 
 %%% This function returns the (nnode*ndim x 1) vector of nodal displacements (d),
 %%% as well as the arrays containing  the stresses (stressGLO) and strains (strainGLO) at all gauss
