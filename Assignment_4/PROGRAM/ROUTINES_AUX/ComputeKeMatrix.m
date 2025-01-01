@@ -16,6 +16,5 @@ for  g = 1:ngaus
     % Matrix of symmetric gradient 
    % dbstop('18')
     Be = QtransfB(BeTILDE,ndim) ;
-
     Ke = Ke + weig(g)*detJe*(Be'*celas*Be) ; 
 end

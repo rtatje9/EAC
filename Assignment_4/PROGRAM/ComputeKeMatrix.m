@@ -1,4 +1,4 @@
-function Ke = ComputeKeMatrix(celas,weig,dershapef,Xe) ;
+function Ke = ComputeKeMatrix(celas,weig,dershapef,Xe);
 % Given  % celas: Elasticity Matrix
 % weig :   Vector of Gauss weights (1xngaus), % dershapef:   Array with the derivatives of shape functions, with respect to  element coordinates (ndim x nnodeE x ngaus),  Xe: Global coordinates of the nodes of the element,  
 % this function returns the element stiffness matrix Ke
@@ -16,6 +16,5 @@ for  g = 1:ngaus
     % Matrix of symmetric gradient 
    % dbstop('18')
     Be = QtransfB(BeTILDE,ndim) ;
-
     Ke = Ke + weig(g)*detJe*(Be'*celas*Be) ; 
 end
