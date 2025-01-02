@@ -13,7 +13,7 @@ end
 %%% INPUT  %%% 
 % Input data file %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-NAME_INPUT_DATA = 'BEAM3D_ASSIGN_TORQUE' ;  % Name of the mesh file 
+NAME_INPUT_DATA = 'BEAM3D_ASSIGN_MESH_4' ;  % Name of the mesh file 
 %------------------------------------------------------
 
 % PREPROCESS  

@@ -55,7 +55,7 @@ DIRICHLET(icond).PRESCRIBED_DISP = {[0],[0],[0]} ;  % Constraints x,y and z dire
 % ------------------------------------------------------------------
 icond= 1 ;
 NEUMANN(icond).NUMBER_SURFACE = 2 ;  % Surface on which the load is applied
-NEUMANN(icond).FORCE_PER_UNIT_SURFACE= [0,-0.5,0] ; % Force per unit surface (units determined by
+NEUMANN(icond).FORCE_PER_UNIT_SURFACE= [0,0,0] ; % Force per unit surface (units determined by
 % the units of the  Young's Modulus, and the units of length employed in GID). In this case, 500 KN/m2
 % = 0.5 MPa
 
@@ -66,11 +66,11 @@ point_force = 0.4; %[MN]
 
 iforce  = 1; % Number of force
 POINT_FORCE(iforce).NODE = 192;
-POINT_FORCE(iforce).VALUE = [0,-point_force,0];    % Young's Modulus Units*(Length units)^2. In this case, MN
+POINT_FORCE(iforce).VALUE = [0,0,-point_force];    % Young's Modulus Units*(Length units)^2. In this case, MN
 
 iforce  = 2; % Number of force
 POINT_FORCE(iforce).NODE = 31;
-POINT_FORCE(iforce).VALUE = [0,0,0];    % Young's Modulus Units*(Length units)^2. In this case, MN
+POINT_FORCE(iforce).VALUE = [0,0,point_force];    % Young's Modulus Units*(Length units)^2. In this case, MN
 
 % -------------------------
 %---5.3)  Body forces
