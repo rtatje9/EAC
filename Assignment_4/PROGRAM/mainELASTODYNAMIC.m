@@ -28,10 +28,10 @@ end
 
 damping_ratio = 0.01; % Damping ratio
 time_steps = 40;
-time_vector = linspace(0, time_steps * 2 * pi / natural_frequencies(5), 500);
+time_vector = linspace(0, time_steps * 2 * pi / natural_frequencies(1), 500);
 
 %% Plot: Mode Amplitudes
-figure;
+figure(1);
 amplitudes = zeros(1, num_modes);
 for mode_idx = 1:num_modes
     amplitudes(mode_idx) = abs(mode_shapes(:, mode_idx)' * mass_matrix * d(free_dofs));
@@ -40,9 +40,10 @@ bar(amplitudes);
 xlabel('Mode Number');
 ylabel('Amplitude');
 title('Mode Shapes: Amplitudes');
+grid on
 
 %% Plot: Frequency vs Amplitude
-figure;
+figure(2);
 frequencies_str = strings(1, num_modes);
 for mode_idx = 1:num_modes
     amplitudes(mode_idx) = abs(mode_shapes(:, mode_idx)' * mass_matrix * d(free_dofs));
@@ -54,9 +55,10 @@ xticklabels(frequencies_str);
 xlabel('Frequency \omega [rad/s]');
 ylabel('Amplitude');
 title('Frequency vs Mode Amplitudes');
+grid on
 
 %% Plot: Frequency (Hz) vs Amplitude
-figure;
+figure(3);
 hz_frequencies = strings(1, num_modes);
 for mode_idx = 1:num_modes
     amplitudes(mode_idx) = abs(mode_shapes(:, mode_idx)' * mass_matrix * d(free_dofs));
@@ -68,6 +70,7 @@ xticklabels(hz_frequencies);
 xlabel('Frequency [Hz]');
 ylabel('Amplitude');
 title('Frequency (Hz) vs Mode Amplitudes');
+grid on
 
 % Post-process results in GID
 GidPostProcessModes(COOR, CN, TypeElement, mode_shapes, posgp', NameFileMesh, DATA, free_dofs);

@@ -79,7 +79,7 @@ fBODY = 0 ;  % Constant value per unit volum MN/m^3.
 
 
 % DENSITY (THIS IS FOR ASSIGNMENT 4)
-dens0 = 2.7;   %
+dens0 = 2.7e-3;   %
 
 %
 DATA.PRINT_AVERAGE_STRESSES_ON_ELEMENTS = 0  ; % Print volumetric average of stresses at each element

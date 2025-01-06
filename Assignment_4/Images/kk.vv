@@ -1,0 +1,33 @@
+BeginZE C:/Users/roger/Documents/Enginyeria aeroespacial/7Q/Enginyeria Aeroespacial Computacional/EAC/Assignment_4/Images/kk.vv
+   x -0.48273429274559021 2.62361955642700195
+   y 1.04694461822509766 -0.744032859802246094
+   z -3.19162464141845703 3.44162464141845703
+   e 1.10554158687591553
+   v -0.0760845367444344667 0.363834826876640816 0.0243779304483959132
+   r 0.928030753007184739
+   m 0.73405987024307251 -0.10061134397983551 0.671590268611907959 0 -0.0101174702867865562 0.98723369836807251 0.158956661820411682 0 -0.679009377956390381 -0.123478502035140991 0.723670721054077148 0 0 0 0 1
+   c 1 0.125 -0.125
+   pd 0
+   pno 0
+   pfo 0
+   pf 4
+   pv 0
+   NowUse 2
+   DrawingType 3
+   LightVector -14.8294000625610352 29.3626995086669922 146.51800537109375 0
+   OGLShadow(UseShadows) 0
+   OGLShadow(RenderMode) RenderNice
+   OGLShadow(ShadowBias) -0.002
+   OGLShadow(AmbientShadows) 1
+   OGLShadow(UseFBO) 0
+   OGLShadow(FBOSize) 2048
+   OGLShadow(DimmedLightFactor) 0.02
+   OGLStereo(UseStereo) 0
+   OGLStereo(RelativeEyeDistance) 1
+   OGLStereo(FlipEyes) 0
+   OGLStereo(StereoMode) AnaglyphColors
+   OGLStereo(EyeDistance) 0.075
+   OGLStereo(LeftEyeDistance) 1 0 0 1
+   OGLStereo(RightEyeDistance) 0 1 1 1
+EndZE C:/Users/roger/Documents/Enginyeria aeroespacial/7Q/Enginyeria Aeroespacial Computacional/EAC/Assignment_4/Images/kk.vv
+
