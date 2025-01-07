@@ -26,7 +26,7 @@ for i = 1:num_modes
     fprintf('Mode %d: %.2f Hz\n', i, natural_frequencies(i) / (2 * pi));
 end
 
-damping_ratio = 0.01; % Damping ratio
+damping_ratio = 0.006; % Damping ratio
 time_steps = 40;
 time_vector = linspace(0, time_steps * 2 * pi / natural_frequencies(1), 500);
 
